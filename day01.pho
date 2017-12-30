@@ -5,6 +5,7 @@ create table type(
 	tname
 	fid
 )
+php
 1 服装鞋帽 0
 2	男装    1
 3		上衣 2
