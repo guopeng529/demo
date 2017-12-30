@@ -1,0 +1,68 @@
+﻿无限级分类
+数据关系
+create table type(
+	id
+	tname
+	fid
+)
+1 服装鞋帽 0
+2	男装    1
+3		上衣 2
+4		裤子 2
+5			西裤 4
+6				0分裤5
+7			牛仔4
+8			运动4
+9	女装 1
+10电子产品 0
+11	电脑 10
+12	制冷 10
+Type
+	function showTypeOption($fid=0){
+	
+	}
+产品模块(多图片添加,修改,删除)
+-- 产品表
+create table product(
+	id int key auto_increment,
+	title varchar(200),
+	userprice float(7,2),
+	price float(7,2),
+	saleprice float(7,2),
+	salenum int,
+	brandid int,
+	content text,
+	style text,
+	libnum int unsigned,
+	pubtime int,
+	state tinyint(1) default 0
+);
+-- 产品图片表
+create table productimage(
+	id int key auto_increment,
+	productid int,
+	imagepath varchar(100)
+);
+-- 品牌表
+create table brand(
+	id int key auto_increment,
+	bname char(20),
+	imagename char(100),
+	typefid int
+);
+
+购物车
+订单管理
+	会员中心
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
